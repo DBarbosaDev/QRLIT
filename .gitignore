@@ -1,0 +1,28 @@
+# python
+.coverage
+*/__pycache__
+**/*/__pycache__
+
+venv
+
+# idea
+.idea/
+*.iml
+
+# files
+*.tmp
+*.csv
+*.json
+*.xml
+
+*.log
+*.png
+*.jpg
+*.svg
+
+# data folder
+data/*
+!data/.gitkeep
+
+# tpch
+dbgen

@@ -1,0 +1,27 @@
+version: '3.3'
+services:
+  mysql_server:
+    image: mysql:8.0.37
+    container_name: mysql_tpch_database
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 4G
+    command: --default-authentication-plugin=caching_sha2_password
+    restart: always
+    ports:
+      - '3306:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+
+  client:
+    build: .
+    tty: true
+    volumes:
+      # volumes here are not mandatory, but make development easier
+      - ./agent:/project/agent
+      - ./cli:/project/cli
+      - ./data:/project/data
+      - ./db_env:/project/db_env
+      - ./shared_utils:/project/shared_utils
