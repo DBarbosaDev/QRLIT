@@ -3,6 +3,31 @@
 Quantum-classical algorithm version of "Intelligent Index Tuning Using Reinforcement Learning". This version is based on the available source code in repository **rl-db-indexing** (https://github.com/Chotom/rl-db-indexing)
 
 
+---
+
+#### Setup and training with Docker (Based on https://github.com/Chotom/rl-db-indexing)
+
+This should only be used for testing or if you are certain, that you can provide stable server performance.
+
+1. Start mysql server and client.
+    ```shell
+    docker compose up -d
+    docker compose up -d --build # if docker images require to be rebuilt or created
+    ```
+
+2. Generate data and load database to mysql_server from client container.
+    ```shell
+    docker compose exec client python3 /project/cli/initiate_environment.py
+    ```
+
+3. You can start training by running script in client container
+    ```shell
+    docker compose exec client python3 /project/cli/run_quantum_train.py
+    ```
+
+---
+
+
 ## rl-db-indexing (From https://github.com/Chotom/rl-db-indexing)
 
 Database indexes tuning with agent using reinforcement learning techniques.\
