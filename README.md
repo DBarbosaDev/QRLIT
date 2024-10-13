@@ -298,7 +298,7 @@ coverage report
 
 ---
 
-### Citing
+### Citing "Intelligent Index Tuning Using Reinforcement Learning"
 
 If you use this repository in your research, please cite:
 ```bibtex
