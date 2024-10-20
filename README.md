@@ -1,7 +1,7 @@
 # QRLIT: Quantum Reinforcement Learning for Database Index Tuning
 
 
-QRLIT is a Quantum-classical algorithm version of "Intelligent Index Tuning Using Reinforcement Learning". This version is based on the available source code in repository **rl-db-indexing** (https://github.com/Chotom/rl-db-indexing)
+QRLIT is a Quantum-classical algorithm version of SMARTIX. This version is based on the available source code in repository **rl-db-indexing** (https://github.com/Chotom/rl-db-indexing)
 
 
 ---
