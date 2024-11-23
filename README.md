@@ -1,9 +1,24 @@
-# QRLIT: Quantum Reinforcement Learning for Database Index Tuning
-
+# [QRLIT: Quantum Reinforcement Learning for Database Index Tuning ](https://doi.org/10.3390/fi16120439)
 
 QRLIT is a Quantum-classical algorithm version of SMARTIX. This version is based on the available source code in repository **rl-db-indexing** (https://github.com/Chotom/rl-db-indexing)
 
+### Cite this work with:
 
+```bibtex
+@Article{fi16120439,
+	AUTHOR 		= {Barbosa, Diogo and Gruenwald, Le and D’Orazio, Laurent and Bernardino, Jorge},
+	TITLE 		= {QRLIT: Quantum Reinforcement Learning for Database Index Tuning},
+	JOURNAL 	= {Future Internet},
+	VOLUME 		= {16},
+	YEAR 		= {2024},
+	NUMBER 		= {12},
+	ARTICLE-NUMBER 	= {439},
+	URL 		= {https://www.mdpi.com/1999-5903/16/12/439},
+	ISSN 		= {1999-5903},
+	ABSTRACT 	= {Selecting indexes capable of reducing the cost of query processing in database systems is a challenging task, especially in large-scale applications. Quantum computing has been investigated with promising results in areas related to database management, such as query optimization, transaction scheduling, and index tuning. Promising results have also been seen when reinforcement learning is applied for database tuning in classical computing. However, there is no existing research with implementation details and experiment results for index tuning that takes advantage of both quantum computing and reinforcement learning. This paper proposes a new algorithm called QRLIT that uses the power of quantum computing and reinforcement learning for database index tuning. Experiments using the database TPC-H benchmark show that QRLIT exhibits superior performance and a faster convergence compared to its classical counterpart.},
+	DOI 		= {10.3390/fi16120439}
+}
+```
 ---
 
 #### Setup and training with Docker (Based on https://github.com/Chotom/rl-db-indexing)
