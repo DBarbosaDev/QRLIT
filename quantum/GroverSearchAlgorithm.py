@@ -12,7 +12,7 @@ class GroverSearchAlgorithm():
         self._simulator = AerSimulator()
         self._simulator.set_option("shots", 1)
 
-    # Code from https://learning.quantum.ibm.com/tutorial/grovers-algorithm#step-1-map-classical-inputs-to-a-quantum-problem
+    # Code adapted from https://learning.quantum.ibm.com/tutorial/grovers-algorithm#step-1-map-classical-inputs-to-a-quantum-problem
     def _get_grover_oracle(self, good_state: str):
         """Build a Grover oracle for single good state
 
